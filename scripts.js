@@ -8,6 +8,6 @@ thisForm.addEventListener('submit', async function(e) {
         body: JSON.stringify(Object.fromEntries(formData))
     });
 
-    const result = await response.json();
-    console.log(result)
+    const result = await response.text();
+    console.log(result);
 })
